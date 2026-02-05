@@ -1,0 +1,11 @@
+theme = Cursor Dark
+macos-titlebar-style = tabs
+macos-icon = glass
+macos-titlebar-proxy-icon = hidden
+split-divider-color = #222
+unfocused-split-opacity = 1
+cursor-style = block
+cursor-style-blink = true
+cursor-color = #818181
+shell-integration-features = no-cursor
+background-opacity = 0.9

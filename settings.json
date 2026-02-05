@@ -1,68 +1,74 @@
 {
-	"workbench.list.smoothScrolling": true,
-	"workbench.sideBar.location": "left",
-	// "workbench.fontAliasing": "antialiased",
-	"workbench.iconTheme": "ayu",
-	"workbench.colorTheme": "Ayu Mirage",
-	// "workbench.colorTheme": "Cursor Dark",
-	// "workbench.tree.indent": 10,
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "left",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Cursor Dark Midnight",
+  "workbench.layoutControl.enabled": false,
 
-	"editor.fontFamily": "Dank Mono",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 16,
-	"editor.fontWeight": "500",
-	"editor.wordWrap": "on",
-	"editor.suggestSelection": "first",
-	"editor.tabSize": 2,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true,
-	"editor.inlineSuggest.enabled": true,
-	"editor.codeActionsOnSave": {
-		// "source.organizeImports": "explicit",
-		"source.fixAll.eslint": "always"
-	},
-	// "editor.lineNumbers": "interval",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "500",
+  "editor.wordWrap": "on",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": {
+    // "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "always"
+  },
+  // "editor.lineNumbers": "interval",
 
-	"editor.minimap.enabled": false,
-	"editor.smoothScrolling": true,
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.accessibilitySupport": "off",
-	"editor.cursorBlinking": "phase",
-	"editor.cursorStyle": "line",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "line",
 
-	"terminal.integrated.smoothScrolling": true,
+  // "window.commandCenter": true,
 
-	"prettier.useTabs": true,
-	"prettier.requireConfig": true,
+  "terminal.integrated.smoothScrolling": true,
 
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.useTabs": true,
+  "prettier.requireConfig": true,
 
-	"gitlens.advanced.messages": {
-		"suppressCreatePullRequestPrompt": true
-	},
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
-	"gitlens.views.scm.grouped.views": {
-		"commits": true,
-		"branches": false,
-		"remotes": true,
-		"stashes": true,
-		"tags": false,
-		"worktrees": true,
-		"contributors": true,
-		"repositories": false,
-		"searchAndCompare": false,
-		"launchpad": false
-	},
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
 
-	"cursor.cpp.disabledLanguages": [
-		"markdown",
-		"plaintext"
-	],
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": false,
+    "remotes": true,
+    "stashes": true,
+    "tags": false,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
 
-	"git.confirmSync": false,
-	"git.openRepositoryInParentFolders": "always",
-	"gitlens.views.branches.showStashes": true,
+  "cursor.cpp.disabledLanguages": ["markdown", "plaintext"],
+  "cursor.composer.textSizeScale": 0.85,
+  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
 
-	// "github.copilot.editor.enableAutoCompletions": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.views.branches.showStashes": true,
+
+  // "github.copilot.editor.enableAutoCompletions": true,
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true
+  },
+
+  "symbols.hidesExplorerArrows": false,
+  "window.commandCenter": true
 }
