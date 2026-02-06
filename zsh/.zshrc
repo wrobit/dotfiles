@@ -99,19 +99,76 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Zsh Autosuggestions & Syntax Highlighting
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# NVM
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Android & Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-
 export ANDROID_HOME=$HOME/Library/Android/sdk
-
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$GEM_HOME/bin:$PATH
-
 export GEM_HOME=$HOME/.gem
+
+# Yeet commit and push command
+yeet() {
+  # Usage: yeet "commit message"
+  local msg="$*"
+  local key
+  local branch
+  if [[ -z "$msg" ]]; then
+    print "Usage: yeet \"commit message\""
+    return 1
+  fi
+  # Ensure we're in a git repo
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
+    print "Not inside a git repository."
+    return 1
+  }
+  # Ensure we're on a branch (not detached HEAD)
+  branch=$(git symbolic-ref --quiet --short HEAD) || {
+    print "Detached HEAD; checkout a branch first."
+    return 1
+  }
+  # 1) Stage all files
+  git add -A || return 1
+  # Nothing to commit?
+  if git diff --cached --quiet; then
+    print "No changes to commit."
+    return 0
+  fi
+  # 2) Show changed files and +/- diff
+  print "\nStaged files:"
+  git diff --cached --name-status
+  print "\nDiff stat (+/-):"
+  git diff --cached --stat
+  # Optional full patch preview (uncomment if you want it):
+  # print "\nFull staged diff:"
+  # git diff --cached
+  # 3) Confirm with Enter, cancel with Esc/Ctrl+C
+  print -n "\nPress Enter to commit+push or Esc to cancel"
+  IFS= read -rs -k 1 key
+  print
+  if [[ "$key" == $'\e' ]]; then
+    print "Cancelled."
+    return 1
+  fi
+  if [[ "$key" != $'\n' && "$key" != $'\r' ]]; then
+    print "Cancelled."
+    return 1
+  fi
+  git commit -m "$msg" || return 1
+  # Push: normal if upstream exists, else set upstream to origin/<current-branch>
+  if git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1; then
+    git push
+  else
+    git push -u origin "$branch"
+  fi
+}
