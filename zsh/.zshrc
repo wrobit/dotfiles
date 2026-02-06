@@ -153,7 +153,7 @@ yeet() {
   # print "\nFull staged diff:"
   # git diff --cached
   # 3) Confirm with Enter, cancel with Esc/Ctrl+C
-  print -n "\nPress Enter to commit+push, Esc to cancel: "
+  print -n "\nPress Enter to commit+push or Esc to cancel"
   IFS= read -rs -k 1 key
   print
   if [[ "$key" == $'\e' ]]; then
