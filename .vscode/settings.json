@@ -3,13 +3,14 @@
 	"workbench.list.smoothScrolling": true,
 	"workbench.iconTheme": "symbols",
   // "workbench.colorTheme": "Cursor Dark Midnight",
-	"workbench.colorTheme": "Bearded Theme Arc Blueberry",
+	"workbench.colorTheme": "Bearded Theme Arc",
 	"workbench.tree.indent": 9,
 	"workbench.layoutControl.enabled": false,
 
 	// Editor settings
 	"editor.fontFamily": "Dank Mono",
 	"editor.fontSize": 16,
+	"editor.lineHeight": 1.7,
 	"editor.fontLigatures": true,
 	"editor.wordWrap": "on",
 	"editor.suggestSelection": "first",
