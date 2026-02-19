@@ -1,74 +1,78 @@
 {
-  "workbench.list.smoothScrolling": true,
-  "workbench.sideBar.location": "left",
-  "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Cursor Dark Midnight",
-  "workbench.layoutControl.enabled": false,
+	// Workbench settings
+	"workbench.list.smoothScrolling": true,
+	"workbench.iconTheme": "symbols",
+  // "workbench.colorTheme": "Cursor Dark Midnight",
+	"workbench.colorTheme": "Bearded Theme Arc Blueberry",
+	"workbench.tree.indent": 9,
+	"workbench.layoutControl.enabled": false,
 
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.fontWeight": "500",
-  "editor.wordWrap": "on",
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.codeActionsOnSave": {
-    // "source.organizeImports": "explicit",
-    "source.fixAll.eslint": "always"
-  },
-  // "editor.lineNumbers": "interval",
+	// Editor settings
+	"editor.fontFamily": "Dank Mono",
+	"editor.fontSize": 16,
+	"editor.fontLigatures": true,
+	"editor.wordWrap": "on",
+	"editor.suggestSelection": "first",
+	"editor.tabSize": 2,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.codeActionsOnSave": {
+		// "source.organizeImports": "explicit",
+		"source.fixAll.eslint": "always"
+	},
+	"editor.minimap.enabled": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.accessibilitySupport": "off",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line",
 
-  "editor.minimap.enabled": false,
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.accessibilitySupport": "off",
-  "editor.cursorBlinking": "phase",
-  "editor.cursorStyle": "line",
+	"window.commandCenter": true,
+	"terminal.integrated.smoothScrolling": true,
 
-  // "window.commandCenter": true,
+	"search.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+},
 
-  "terminal.integrated.smoothScrolling": true,
+	// Cursor settings
+	"cursor.cpp.disabledLanguages": [
+		"markdown",
+		"plaintext"
+	],
+	"cursor.composer.textSizeScale": 0.85,
+	"cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
 
-  "prettier.useTabs": true,
-  "prettier.requireConfig": true,
+	// VScode settings
+	// "github.copilot.editor.enableAutoCompletions": true,
 
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
+	// Extensions settings
+	"prettier.useTabs": true,
+	"prettier.requireConfig": true,
 
-  "gitlens.advanced.messages": {
-    "suppressCreatePullRequestPrompt": true
-  },
+	"symbols.hidesExplorerArrows": false,
 
-  "gitlens.views.scm.grouped.views": {
-    "commits": true,
-    "branches": false,
-    "remotes": true,
-    "stashes": true,
-    "tags": false,
-    "worktrees": true,
-    "contributors": true,
-    "repositories": false,
-    "searchAndCompare": false,
-    "launchpad": false
-  },
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
 
-  "cursor.cpp.disabledLanguages": ["markdown", "plaintext"],
-  "cursor.composer.textSizeScale": 0.85,
-  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
+	"git.confirmSync": false,
+	"git.openRepositoryInParentFolders": "always",
+	"gitlens.views.branches.showStashes": true,
 
-  "git.confirmSync": false,
-  "git.openRepositoryInParentFolders": "always",
-  "gitlens.views.branches.showStashes": true,
-
-  // "github.copilot.editor.enableAutoCompletions": true,
-  "search.exclude": {
-    "**/.git": true,
-    "**/node_modules": true
-  },
-
-  "symbols.hidesExplorerArrows": false,
-  "window.commandCenter": true
+	"gitlens.advanced.messages": {
+		"suppressCreatePullRequestPrompt": true
+	},
+	"gitlens.views.scm.grouped.views": {
+		"commits": true,
+		"branches": false,
+		"remotes": true,
+		"stashes": true,
+		"tags": false,
+		"worktrees": true,
+		"contributors": true,
+		"repositories": false,
+		"searchAndCompare": false,
+		"launchpad": false
+	},
 }
