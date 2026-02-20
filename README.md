@@ -8,7 +8,7 @@ Personal development environment dotfiles for macOS.
 - `zsh/.zshrc` - Oh My Zsh setup
 - `git/.gitconfig` - Git defaults (user identity, larger HTTP post buffer, Git LFS filter settings).
 - `ghostty/config` - Ghostty terminal theme and behavior settings.
-- `settings.json` - Editor settings (Cursor/VS Code-compatible).
+- `.vscode/settings.json` - Editor settings (Cursor/VS Code-compatible).
 
 ## Scope
 
