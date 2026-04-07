@@ -1,10 +1,11 @@
 ---
 name: agent-workflow
 description: Orchestrates read-only research, implementation planning, plan critique, and pre-commit polish for non-trivial work. Use when starting a feature or refactor that should follow a structured plan-review-ship loop, when the user references workflow or phased delivery, or for pre-PR polish.
+user-invocable: true
 license: MIT
 metadata:
   version: "1.0.0"
-user-invocable: false
+  user-invocable: true
 ---
 
 # Agent workflow
