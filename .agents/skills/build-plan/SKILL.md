@@ -59,4 +59,4 @@ Produce a structured plan with:
 
 For full guidance and templates, follow:
 
-* `../../../.skills/agent-workflow/rules/build-plan.md`
+* `../agent-workflow/rules/build-plan.md`

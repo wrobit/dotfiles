@@ -57,4 +57,4 @@ Provide:
 
 For full guidance and templates, follow:
 
-* `../../../.skills/agent-workflow/rules/plan-critique.md`
+* `../agent-workflow/rules/plan-critique.md`

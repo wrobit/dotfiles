@@ -57,4 +57,4 @@ Provide:
 
 For full guidance and templates, follow:
 
-* `../../../.skills/agent-workflow/rules/polish.md`
+* `../agent-workflow/rules/polish.md`
