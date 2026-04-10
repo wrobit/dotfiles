@@ -22,6 +22,22 @@ Reference this workflow when:
 * The user asks for pre-commit or pre-PR cleanup on the current diff
 * The user mentions workflow, plan/critique, or phased delivery
 
+## When NOT to Apply
+
+Do not use this workflow when:
+
+* The user wants to **learn or understand** a concept without implementing anything — use `learn`
+* The user wants only a **single phase** (research, plan, critique, or polish) — invoke that skill directly
+* The task is **trivial** enough to implement without a structured plan (e.g. fixing a typo, adding a comment)
+* The user needs a quick factual answer — answer directly without invoking phases
+
+## Examples
+
+* "Implement the new auth flow using the full workflow"
+* "I want to plan, review, and then build the caching layer"
+* "Let's use the structured workflow for this refactor"
+* "Research the current system, plan the migration, then implement it"
+
 ## Phases by Order (Quick Reference)
 
 | Order | Phase | Mode | Rules file |
