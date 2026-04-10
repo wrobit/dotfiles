@@ -32,9 +32,16 @@ This repository currently contains:
   - Shared editor/workbench settings for Cursor/VS Code style environments.
   - Includes formatting/lint-on-save behavior, font/theme preferences, Git/GitLens preferences, and Cursor-specific options.
 
+- `.agents/skills/`
+  - AI agent skills for OpenCode and other agent tools.
+  - `agent-workflow`: Structured research → plan → critique → implement → polish loop for non-trivial work.
+  - `learn`: Specialist teacher mode for deep conceptual learning without code solutions.
+  - `research`, `build-plan`, `plan-critique`, `polish`: Individual phase skills that reference the agent-workflow rules.
+  - Each skill includes YAML frontmatter, usage examples, and detailed rule files.
+
 ## Scope
 
-This repo is focused on shell, terminal, git, editor, and machine bootstrap configuration.
+This repo is focused on shell, terminal, git, editor, machine bootstrap configuration, and AI agent skills.
 
 ## Apply this setup
 
@@ -65,4 +72,11 @@ cp .vscode/settings.json "$HOME/Library/Application Support/Cursor/User/settings
 # VS Code:
 mkdir -p "$HOME/Library/Application Support/Code/User"
 cp .vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+
+# 6) Install AI agent skills (optional)
+# Global (available in all projects):
+cp -r .agents ~/.agents
+
+# Project-local (for this repo only):
+# Skills are already in .agents/skills/ and will be discovered by OpenCode
 ```
