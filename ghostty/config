@@ -6,7 +6,6 @@
 font-size = 14
 window-height=40
 window-width=160
-
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
 macos-icon = glass
