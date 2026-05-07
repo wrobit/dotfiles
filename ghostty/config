@@ -1,18 +1,20 @@
 # font-family = Dank Mono
 # theme = Ayu Mirage
 # theme = Cursor Dark
+# theme = dark:Ayu,light:Ayu Light
 
 font-size = 14
 window-height=40
 window-width=160
-theme = dark:Ayu,light:Ayu Light
+
 macos-titlebar-style = tabs
-macos-icon = glass
 macos-titlebar-proxy-icon = hidden
+macos-icon = glass
 split-divider-color = #222
 unfocused-split-opacity = 1
 cursor-style = block
 cursor-style-blink = true
 cursor-color = #818181
 shell-integration-features = no-cursor
-background-opacity = 0.98
+background-opacity = 0.85
+background-blur = 16
