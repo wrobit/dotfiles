@@ -1,16 +1,16 @@
 {
 	// Workbench settings
 	"workbench.list.smoothScrolling": true,
+	// "workbench.colorTheme": "Bearded Theme Arc",
+	"workbench.colorTheme": "poimandres-noitalics",
 	"workbench.iconTheme": "symbols",
-  // "workbench.colorTheme": "Cursor Dark Midnight",
-	"workbench.colorTheme": "Bearded Theme Arc",
 	"workbench.tree.indent": 9,
 	"workbench.layoutControl.enabled": false,
 
 	// Editor settings
 	"editor.fontFamily": "Dank Mono",
 	"editor.fontSize": 16,
-	"editor.lineHeight": 1.7,
+	"editor.lineHeight": 2,
 	"editor.fontLigatures": true,
 	"editor.wordWrap": "on",
 	"editor.suggestSelection": "first",
@@ -30,7 +30,9 @@
 	"editor.cursorStyle": "line",
 
 	"window.commandCenter": true,
+	"window.autoDetectColorScheme": false,
 	"terminal.integrated.smoothScrolling": true,
+	"terminal.integrated.defaultProfile.osx": "zsh",
 
 	"search.exclude": {
 		"**/.git": true,
@@ -38,15 +40,9 @@
 },
 
 	// Cursor settings
-	"cursor.cpp.disabledLanguages": [
-		"markdown",
-		"plaintext"
-	],
 	"cursor.composer.textSizeScale": 0.85,
 	"cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
-
-	// VScode settings
-	// "github.copilot.editor.enableAutoCompletions": true,
+	"cursor.composer.usageSummaryDisplay": "always",
 
 	// Extensions settings
 	"prettier.useTabs": true,
@@ -59,21 +55,9 @@
 
 	"git.confirmSync": false,
 	"git.openRepositoryInParentFolders": "always",
+	
 	"gitlens.views.branches.showStashes": true,
-
 	"gitlens.advanced.messages": {
 		"suppressCreatePullRequestPrompt": true
-	},
-	"gitlens.views.scm.grouped.views": {
-		"commits": true,
-		"branches": false,
-		"remotes": true,
-		"stashes": true,
-		"tags": false,
-		"worktrees": true,
-		"contributors": true,
-		"repositories": false,
-		"searchAndCompare": false,
-		"launchpad": false
 	},
 }

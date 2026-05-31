@@ -3,6 +3,7 @@
 # theme = Cursor Dark
 # theme = dark:Ayu,light:Ayu Light
 
+theme = Catppuccin Frappe
 font-size = 14
 window-height=40
 window-width=160
