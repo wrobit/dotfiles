@@ -50,8 +50,7 @@
 
 	"symbols.hidesExplorerArrows": false,
 
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"javascript.updateImportsOnFileMove.enabled": "always",
+	"js/ts.updateImportsOnFileMove.enabled": "always",
 
 	"git.confirmSync": false,
 	"git.openRepositoryInParentFolders": "always",
