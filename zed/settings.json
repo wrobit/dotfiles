@@ -1,0 +1,64 @@
+{
+  "vim_mode": false,
+  "edit_predictions": {
+    "open_ai_compatible_api": {
+      "model": "",
+    },
+    "codestral": {
+      "model": "codestral-latest",
+    },
+  },
+  "disable_ai": true,
+  "show_edit_predictions": true,
+
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Aura Soft Dark",
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Symbols Icon Theme",
+    "dark": "Symbols Icon Theme",
+  },
+  "ui_font_family": "Dank Mono",
+
+  "buffer_font_family": "Dank Mono",
+  "buffer_font_size": 16.0,
+  "buffer_font_features": {
+    "calt": 1,
+  },
+  "buffer_line_height": {
+    "custom": 2,
+  },
+
+  "format_on_save": "on",
+  "soft_wrap": "editor_width",
+  "tab_size": 2,
+
+  "cursor_shape": "bar",
+  "cursor_blink": true,
+
+  "minimap": {
+    "show": "never",
+  },
+
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+
+  "terminal": {
+    "font_size": 14.0,
+  },
+
+  "base_keymap": "VSCode",
+}

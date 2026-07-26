@@ -28,6 +28,10 @@ This repository currently contains:
   - Shared editor/workbench settings for Cursor/VS Code style environments.
   - Includes formatting/lint-on-save behavior, font/theme preferences, Git/GitLens preferences, and Cursor-specific options.
 
+- `zed/settings.json`
+  - Shared editor settings for Zed editor.
+  - Includes font/theme preferences and Zed-specific options.
+
 - `.pi/agent/`
   - Pi coding agent settings, theme, and local extensions.
   - Adds model/dashboard UI, decision prompt tool, and UI customization.
@@ -71,6 +75,10 @@ cp .vscode/settings.json "$HOME/Library/Application Support/Cursor/User/settings
 # VS Code:
 mkdir -p "$HOME/Library/Application Support/Code/User"
 cp .vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+
+# Zed:
+mkdir -p ~/.config/zed
+cp zed/settings.json ~/.config/zed/settings.json
 
 # 6) Restore Pi coding agent config (optional)
 mkdir -p ~/.pi
