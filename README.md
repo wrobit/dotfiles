@@ -18,10 +18,6 @@ This repository currently contains:
   - Configures `nvm`, Java (`JAVA_HOME`), Android SDK paths, and Ruby gem path.
   - Defines a `yeet()` helper that stages all changes, shows staged diff summary, confirms on Enter, then commits and pushes.
 
-- `zsh/.pom.sh`
-  - Terminal Pomodoro script with configurable work/break durations and cycle count.
-  - Renders a live progress bar and supports quitting with `q`.
-
 - `git/.gitconfig`
   - Sets user identity, increases HTTP post buffer, and enables Git LFS filter settings.
 
@@ -32,15 +28,19 @@ This repository currently contains:
   - Shared editor/workbench settings for Cursor/VS Code style environments.
   - Includes formatting/lint-on-save behavior, font/theme preferences, Git/GitLens preferences, and Cursor-specific options.
 
+- `.pi/agent/`
+  - Pi coding agent settings, theme, and local extensions.
+  - Adds model/dashboard UI, decision prompt tool, and UI customization.
+  - Keeps runtime state and secrets ignored via `.pi/agent/.gitignore`.
+
 - `skills/`
   - Skill library for OpenCode and other agent tools.
   - `README.md`: top-level index of available skill categories.
-  - `engineering/`: code-facing skills such as `agent-workflow`, `research`, `build-plan`, `plan-critique`, `polish`, `learn`, `to-prd`, and `to-issues`.
-  - `productivity/`: general workflow skills such as `caveman`, `grill-me`.
+  - `engineering/`: code-facing skills such as `agent-workflow`, `research`, `build-plan`, `plan-critique`, `polish`, and `learn`.
 
 ## Scope
 
-This repo is focused on shell, terminal, git, editor, machine bootstrap configuration, and AI agent skills.
+This repo is focused on shell, terminal, git, editor, machine bootstrap configuration, Pi setup, and AI agent skills.
 
 ## Apply this setup
 
@@ -72,7 +72,16 @@ cp .vscode/settings.json "$HOME/Library/Application Support/Cursor/User/settings
 mkdir -p "$HOME/Library/Application Support/Code/User"
 cp .vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 
-# 6) Install AI agent skills (optional)
+# 6) Restore Pi coding agent config (optional)
+mkdir -p ~/.pi
+rsync -a .pi/agent/ ~/.pi/agent/
+
+# Install extension dependencies
+for dir in ~/.pi/agent/extensions/*; do
+  [ -f "$dir/package.json" ] && (cd "$dir" && npm install)
+done
+
+# 7) Install AI agent skills (optional)
 # Source skills live under `skills/`.
 # Copy the categories or individual skills you want into your agent tool's configured skill directory - usually under ~/.agents/skills.
 ```
