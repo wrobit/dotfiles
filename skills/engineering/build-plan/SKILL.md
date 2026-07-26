@@ -113,21 +113,21 @@ One sentence.
 
 **Files to Change**
 
-| # | File | Change | Why |
-|---|------|--------|-----|
-| 1 | `path/to/file.ts` | ... | ... |
+| #   | File              | Change | Why |
+| --- | ----------------- | ------ | --- |
+| 1   | `path/to/file.ts` | ...    | ... |
 
 **Files to Create**
 
-| # | File | Purpose |
-|---|------|---------|
-| 1 | `path/to/file.ts` | ... |
+| #   | File              | Purpose |
+| --- | ----------------- | ------- |
+| 1   | `path/to/file.ts` | ...     |
 
 **Tests**
 
-| # | File | What to test |
-|---|------|--------------|
-| 1 | `path/to/test.ts` | ... |
+| #   | File              | What to test |
+| --- | ----------------- | ------------ |
+| 1   | `path/to/test.ts` | ...          |
 
 **Out of Scope**
 
