@@ -14,6 +14,7 @@ import {
 import {
   emptyGitInfoState,
   emptyModelInfoState,
+  type ModelInfoState,
   GIT_INFO_CHANNEL,
   isGitInfoState,
   isModelInfoState,
@@ -159,6 +160,14 @@ function formatDirectory(cwd: string) {
   return sanitizeTerminalLabel(display);
 }
 
+function formatModel(info: ModelInfoState) {
+  const provider = sanitizeTerminalLabel(info.provider);
+  const modelId = sanitizeTerminalLabel(info.modelId);
+  const thinking = sanitizeTerminalLabel(info.thinking);
+  const model = provider ? `${provider}/${modelId}` : modelId;
+  return thinking && thinking !== "off" ? `${model} · ${thinking}` : model;
+}
+
 function center(text: string, width: number) {
   const padding = Math.max(0, Math.floor((width - visibleWidth(text)) / 2));
   return truncateToWidth(`${" ".repeat(padding)}${text}`, width);
@@ -230,8 +239,9 @@ export default function uiCustomization(pi: ExtensionAPI) {
           const art = TITLE_LINES.map((line, row) =>
             center(gradientText(line, row * 0.045), width),
           );
+          const headerInfo = `${title} · ${formatModel(modelInfo)}`;
           const subtitle = center(
-            `${BOLD}${gradientText(title, 0.18)}${RESET}`,
+            `${BOLD}${gradientText(headerInfo, 0.18)}${RESET}`,
             width,
           );
           return ["", ...art, subtitle, ""];
@@ -273,9 +283,7 @@ export default function uiCustomization(pi: ExtensionAPI) {
               ? "— tok/s"
               : `${Math.round(modelInfo.tokensPerSecond)} tok/s`;
           const usage = `${contextPercent}%/${contextWindow} · $${modelInfo.cost.toFixed(2)} · ${tps}`;
-          const model = modelInfo.provider
-            ? `${modelInfo.provider}/${modelInfo.modelId} · ${modelInfo.thinking}`
-            : modelInfo.modelId;
+          const model = formatModel(modelInfo);
 
           const lines = [
             columns(directory, theme.fg("muted", model), width),
