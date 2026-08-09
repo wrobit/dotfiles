@@ -8,3 +8,10 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  a = add
+  p = push
