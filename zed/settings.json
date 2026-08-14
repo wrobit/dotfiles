@@ -45,6 +45,8 @@
 
   "project_panel": {
     "dock": "left",
+    "entry_spacing": "standard",
+    "indent_size": 14,
   },
   "outline_panel": {
     "dock": "left",

@@ -1,0 +1,58 @@
+{
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    }
+  },
+
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Mirage"
+  },
+  "theme_overrides": {
+    "Aura Soft Dark": {
+      "border.variant": "#15141C"
+    }
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Symbols Icon Theme",
+    "dark": "Symbols Icon Theme"
+  },
+  "ui_font_size": 15.0,
+
+  "buffer_font_family": "Dank Mono",
+  "buffer_font_size": 16.0,
+  "buffer_line_height": {
+    "custom": 1.8
+  },
+
+  "tab_size": 2,
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+    "allow_data_collection": "no",
+    "mode": "eager"
+  },
+  "show_edit_predictions": true,
+
+  "project_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+
+  "base_keymap": "VSCode"
+}
