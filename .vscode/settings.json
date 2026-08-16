@@ -1,62 +1,96 @@
 {
-	// Workbench settings
-	"workbench.list.smoothScrolling": true,
-	// "workbench.colorTheme": "Bearded Theme Arc",
-	"workbench.colorTheme": "poimandres-noitalics",
-	"workbench.iconTheme": "symbols",
-	"workbench.tree.indent": 9,
-	"workbench.layoutControl.enabled": false,
+  // Workbench
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 8,
+  "workbench.layoutControl.enabled": false,
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "poimandres-storm",
+  "workbench.activityBar.location": "top",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-	// Editor settings
-	"editor.fontFamily": "Dank Mono",
-	"editor.fontSize": 16,
-	"editor.lineHeight": 2,
-	"editor.fontLigatures": true,
-	"editor.wordWrap": "on",
-	"editor.suggestSelection": "first",
-	"editor.tabSize": 2,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true,
-	"editor.inlineSuggest.enabled": true,
-	"editor.codeActionsOnSave": {
-		// "source.organizeImports": "explicit",
-		"source.fixAll.eslint": "always"
-	},
-	"editor.minimap.enabled": false,
-	"editor.smoothScrolling": true,
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.accessibilitySupport": "off",
-	"editor.cursorBlinking": "expand",
-	"editor.cursorStyle": "line",
+  // Editor
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 32,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
 
-	"window.commandCenter": true,
-	"window.autoDetectColorScheme": false,
-	"terminal.integrated.smoothScrolling": true,
-	"terminal.integrated.defaultProfile.osx": "zsh",
+  // Big performance win
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": false,
+  "editor.accessibilitySupport": "off",
 
-	"search.exclude": {
-		"**/.git": true,
-		"**/node_modules": true,
-},
+  // Smooth, but not over-animated
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
 
-	// Cursor settings
-	"cursor.composer.textSizeScale": 0.85,
-	"cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
-	"cursor.composer.usageSummaryDisplay": "always",
+  // Suggestions
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.minShowDelay": 80,
 
-	// Extensions settings
-	"prettier.useTabs": true,
-	"prettier.requireConfig": true,
+  // Formatting
+  "editor.formatOnSave": true,
 
-	"symbols.hidesExplorerArrows": false,
+  "editor.codeActionsOnSave": {
+    // "source.fixAll.eslint": "explicit"
+  },
 
-	"js/ts.updateImportsOnFileMove.enabled": "always",
+  // Terminal
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
 
-	"git.confirmSync": false,
-	"git.openRepositoryInParentFolders": "always",
-	
-	"gitlens.views.branches.showStashes": true,
-	"gitlens.advanced.messages": {
-		"suppressCreatePullRequestPrompt": true
-	},
+  // Search
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+
+  // File watching
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/coverage/**": true
+  },
+
+  // TypeScript / JS
+	"js/ts.updateImportsOnFileMove.enabled": "prompt",
+
+  // Git
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+
+  // Prettier
+  "prettier.useTabs": true,
+  "prettier.requireConfig": true,
+	  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Symbols
+  "symbols.hidesExplorerArrows": false,
+
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true,
+    "typescriptreact": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+
+
 }
