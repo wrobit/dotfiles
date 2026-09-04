@@ -10,7 +10,7 @@
 
   // Editor
   "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.lineHeight": 32,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
