@@ -4,7 +4,8 @@
   "workbench.tree.indent": 8,
   "workbench.layoutControl.enabled": false,
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "poimandres-storm",
+  // "workbench.colorTheme": "poimandres-storm",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.activityBar.location": "top",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
