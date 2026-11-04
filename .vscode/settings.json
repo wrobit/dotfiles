@@ -8,6 +8,7 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.activityBar.location": "top",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.experimental.modernUI": false,
 
   // Editor
   "editor.fontFamily": "Dank Mono",
