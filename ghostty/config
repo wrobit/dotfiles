@@ -1,9 +1,11 @@
-# font-family = Dank Mono
+# Other options
 # theme = Ayu Mirage
 # theme = Cursor Dark
 # theme = dark:Ayu,light:Ayu Light
+# theme = Catppuccin Frappe
+# font-family = Dank Mono
 
-theme = Catppuccin Frappe
+theme = Matte Black
 font-size = 14
 window-height=40
 window-width=160
@@ -16,5 +18,13 @@ cursor-style = block
 cursor-style-blink = true
 cursor-color = #818181
 shell-integration-features = no-cursor
-background-opacity = 0.85
+background-opacity = 1
 background-blur = 16
+
+# Neutralize Matte Black's yellow/amber green and blue slots.
+palette = 2=#bbbbbb
+palette = 10=#eeeeee
+palette = 3=#bbbbbb
+palette = 11=#eeeeee
+palette = 4=#bbbbbb
+palette = 12=#eeeeee

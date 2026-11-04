@@ -1,3 +1,5 @@
 {
-  "theme": "github-dark-default"
+  "theme": "monochrom",
+  "defaultProvider": "openai-codex",
+  "defaultThinkingLevel": "low"
 }
